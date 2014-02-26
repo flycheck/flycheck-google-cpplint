@@ -1,4 +1,4 @@
-# flymake-google-cpplint.el
+# flycheck-google-cpplint.el
 
 Add Google C++ Style checker for [Flycheck](https://github.com/flycheck/flycheck).
 
