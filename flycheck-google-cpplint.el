@@ -124,7 +124,7 @@ See URL
   ((error line-start (file-name) ":" line ":  " (message) line-end))
   :modes (c-mode c++-mode))
 
-(add-to-list 'flycheck-checkers 'c/c++-googlelint)
+(add-to-list 'flycheck-checkers 'c/c++-googlelint 'append)
 
 (provide 'flycheck-google-cpplint)
 
