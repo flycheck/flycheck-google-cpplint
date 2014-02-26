@@ -42,6 +42,8 @@ In your [Cask](https://cask/cask) file:
 (require 'flycheck)
 (require 'flycheck-google-cpplint)
 
+;; Add Google C++ Style checker.
+;; In default, syntax checked by Clang and Cppcheck.
 (flycheck-add-next-checker 'c/c++-cppcheck
                            'c/c++-googlelint)
 
