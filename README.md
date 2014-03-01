@@ -31,8 +31,8 @@ In your `init.el`:
      (require 'flycheck-google-cpplint)
      ;; Add Google C++ Style checker.
      ;; In default, syntax checked by Clang and Cppcheck.
-     (flycheck-add-next-checker 'c/c++-clang
-                                'c/c++-googlelint 'append)))
+     (flycheck-add-next-checker 'c/c++-cppcheck
+                                '(warnings-only . c/c++-googlelint))))
 ```
 
 ## Usage
