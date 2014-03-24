@@ -35,6 +35,13 @@ In your `init.el`:
                                 '(warnings-only . c/c++-googlelint))))
 ```
 
+If you not use `cppcheck`. You have need to change `flycheck-add-next-checker`.
+
+```
+(flycheck-add-next-checker 'c/c++-clang
+			               '(warnings-only . c/c++-googlelint))
+```
+
 ## Usage
 
 ### Install cpplint.py
