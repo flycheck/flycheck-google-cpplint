@@ -45,10 +45,18 @@ $ sudo mv cpplint.py /usr/local/bin/cpplint.py
 $ sudo chmod 755 /usr/local/bin/cpplint.py
 ```
 
-You should be able to run the `cpplint.py` command.
+You should be able to run the `cpplint.py` command in Emacs.
+If above location,
 
 ```
-$ cpplint.py
+(executable-find "cpplint.py") ; => "/usr/local/bin/cpplint.py"
+```
+
+or
+
+```
+(custom-set-variables
+ '(flycheck-c/c++-googlelint-executable "/usr/local/bin/cpplint.py"))
 ```
 
 ### Configure for cpplint.py
