@@ -129,7 +129,7 @@ See URL
             (option "--linelength=" flycheck-googlelint-linelength)
             source-original)
   :error-patterns
-  ((error line-start (file-name) ":" line ":  " (message) line-end))
+  ((warning line-start (file-name) ":" line ":  " (message) line-end))
   :modes (c-mode c++-mode))
 
 (add-to-list 'flycheck-checkers 'c/c++-googlelint 'append)
