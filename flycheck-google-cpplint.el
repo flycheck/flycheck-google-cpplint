@@ -6,7 +6,7 @@
 ;; URL: https://github.com/flycheck/flycheck-google-cpplint/
 ;; Version: 1.0.1
 ;; Keywords: flycheck, C, C++
-;; Package-Requires: ((flycheck "0.18"))
+;; Package-Requires: ((flycheck "0.20-cvs1"))
 
 ;; This file is not part of GNU Emacs.
 
