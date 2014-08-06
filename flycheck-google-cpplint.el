@@ -122,11 +122,11 @@ linelength=digits
 See URL
 `http://google-styleguide.googlecode.com/svn/trunk/cpplint/cpplint.py'."
   :command ("cpplint.py"
-            (option "--verbose=" flycheck-googlelint-verbose)
-            (option "--filter=" flycheck-googlelint-filter
+            (option "--verbose=" flycheck-googlelint-verbose concat)
+            (option "--filter=" flycheck-googlelint-filter concat
                     flycheck-option-comma-separated-list)
-            (option "--root=" flycheck-googlelint-root)
-            (option "--linelength=" flycheck-googlelint-linelength)
+            (option "--root=" flycheck-googlelint-root concat)
+            (option "--linelength=" flycheck-googlelint-linelength concat)
             source-original)
   :error-patterns
   ((warning line-start (file-name) ":" line ":  " (message) line-end))
