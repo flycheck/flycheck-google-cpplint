@@ -93,7 +93,7 @@ root=subdir
   ignored.
 
   Examples:
-    Assuing that src/.git exists, the header guard CPP variables for
+    Assuming that src/.git exists, the header guard CPP variables for
     src/chrome/browser/ui/browser.h are:
 
     No flag => CHROME_BROWSER_UI_BROWSER_H_
@@ -120,7 +120,7 @@ linelength=digits
   "The valid file extensions passed to the Google C++ lint.
 
 extensions=x,y,z
-  This is a comma separated list with allowed file extensions. The default value is
+  This is a comma-separated list with allowed file extensions. The default value is
   `cc, h, cpp, cu, cuh'.
 
   Examples:
