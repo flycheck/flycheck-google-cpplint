@@ -32,14 +32,14 @@ In your `init.el`:
      ;; Add Google C++ Style checker.
      ;; In default, syntax checked by Clang and Cppcheck.
      (flycheck-add-next-checker 'c/c++-cppcheck
-                                '(warnings-only . c/c++-googlelint))))
+                                '(warning . c/c++-googlelint))))
 ```
 
 If you not use `cppcheck`. You have need to change `flycheck-add-next-checker`.
 
 ```
 (flycheck-add-next-checker 'c/c++-clang
-			               '(warnings-only . c/c++-googlelint))
+                           '(warning . c/c++-googlelint))
 ```
 
 ## Usage
