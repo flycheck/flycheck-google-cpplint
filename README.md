@@ -1,5 +1,7 @@
 # flycheck-google-cpplint.el
 
+[![License GPL 3][badge-license]][copying]
+
 Add Google C++ Style checker for [Flycheck](https://github.com/flycheck/flycheck).
 
 If you're want to write code according to the
