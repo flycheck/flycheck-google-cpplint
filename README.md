@@ -46,27 +46,13 @@ If you not use `cppcheck`. You have need to change `flycheck-add-next-checker`.
 
 ## Usage
 
-### Install cpplint.py
+### Install `cpplint` through `pip`
 
 ```
-$ wget http://google-styleguide.googlecode.com/svn/trunk/cpplint/cpplint.py
-$ sudo mv cpplint.py /usr/local/bin/cpplint.py
-$ sudo chmod 755 /usr/local/bin/cpplint.py
+$ pip install cpplint
 ```
 
-You should be able to run the `cpplint.py` command in Emacs.
-If above location,
-
-```
-(executable-find "cpplint.py") ; => "/usr/local/bin/cpplint.py"
-```
-
-or
-
-```
-(custom-set-variables
- '(flycheck-c/c++-googlelint-executable "/usr/local/bin/cpplint.py"))
-```
+*P.S. Make sure cpplint is in your environment path settings*
 
 ### Configure for cpplint.py
 
