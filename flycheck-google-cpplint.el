@@ -3,6 +3,7 @@
 ;; Copyright (C) 2014  Akiha Senda
 
 ;; Author: Akiha Senda <senda.akiha@gmail.com>
+;; Maintainer: Jen-Chieh Shen <jcs090218@gmail.com>
 ;; URL: https://github.com/flycheck/flycheck-google-cpplint/
 ;; Version: 1.0.1
 ;; Keywords: flycheck, C, C++
@@ -21,7 +22,7 @@
 ;; GNU General Public License for more details.
 
 ;; You should have received a copy of the GNU General Public License
-;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ;;; Commentary:
 
@@ -29,13 +30,13 @@
 
 ;; If you're want to write code according to the Google C++ Style Guide,
 ;; this will help a great deal.
-;; http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml
+;; https://google.github.io/styleguide/cppguide.html
 
 ;; I recommend that the package google-c-style also installed with.
-;; http://melpa.milkbox.net/#/google-c-style
+;; https://melpa.org/#/google-c-style
 
 ;; For more infomations, please check the GitHub
-;; https://github.com/senda-akiha/flycheck-google-cpplint/
+;; https://github.com/flycheck/flycheck-google-cpplint/
 
 ;;;; Setup
 
@@ -120,8 +121,9 @@ linelength=digits
   "A C/C++ style checker using google cpplint.
 
 See URL
-`http://google-styleguide.googlecode.com/svn/trunk/cpplint/cpplint.py'."
-  :command ("cpplint.py"
+`https://github.com/google/styleguide/blob/gh-pages/cpplint/cpplint.py' and
+`https://pypi.org/project/cpplint/#description'."
+  :command ("cpplint"
             (option "--verbose=" flycheck-googlelint-verbose concat)
             (option "--filter=" flycheck-googlelint-filter concat
                     flycheck-option-comma-separated-list)
@@ -135,5 +137,4 @@ See URL
 (add-to-list 'flycheck-checkers 'c/c++-googlelint 'append)
 
 (provide 'flycheck-google-cpplint)
-
 ;;; flycheck-google-cpplint.el ends here

@@ -1,18 +1,20 @@
 # flycheck-google-cpplint.el
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-green.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 Add Google C++ Style checker for [Flycheck](https://github.com/flycheck/flycheck).
 
 If you're want to write code according to the
-[Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml)
+[Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 , this will help a great deal.
 
 I recommend that the package
-[google-c-style](http://melpa.milkbox.net/#/google-c-style)
+[google-c-style](https://melpa.org/#/google-c-style)
 also installed with.
 
 ## Installation
 
-As usual, from [MELPA](http://melpa.milkbox.net).
+As usual, from [MELPA](https://melpa.org/#/).
 
 In your [Cask](http://cask.github.io) file:
 
@@ -25,7 +27,7 @@ In your [Cask](http://cask.github.io) file:
 
 In your `init.el`:
 
-```
+```el
 (eval-after-load 'flycheck
   '(progn
      (require 'flycheck-google-cpplint)
@@ -37,38 +39,24 @@ In your `init.el`:
 
 If you not use `cppcheck`. You have need to change `flycheck-add-next-checker`.
 
-```
+```el
 (flycheck-add-next-checker 'c/c++-clang
                            '(warning . c/c++-googlelint))
 ```
 
 ## Usage
 
-### Install cpplint.py
+### Install `cpplint` through `pip`
 
 ```
-$ wget http://google-styleguide.googlecode.com/svn/trunk/cpplint/cpplint.py
-$ sudo mv cpplint.py /usr/local/bin/cpplint.py
-$ sudo chmod 755 /usr/local/bin/cpplint.py
+$ pip install cpplint
 ```
 
-You should be able to run the `cpplint.py` command in Emacs.
-If above location,
-
-```
-(executable-find "cpplint.py") ; => "/usr/local/bin/cpplint.py"
-```
-
-or
-
-```
-(custom-set-variables
- '(flycheck-c/c++-googlelint-executable "/usr/local/bin/cpplint.py"))
-```
+*P.S. Make sure cpplint is in your environment path settings*
 
 ### Configure for cpplint.py
 
-```
+```el
 (custom-set-variables
  '(flycheck-googlelint-verbose "3")
  '(flycheck-googlelint-filter "-whitespace,+whitespace/braces")
@@ -88,7 +76,7 @@ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with
-this program.  If not, see http://www.gnu.org/licenses/.
+this program.  If not, see https://www.gnu.org/licenses/.
 
 See
 [COPYING](https://github.com/flycheck/flycheck-google-cpplint/blob/master/COPYING)
