@@ -9,7 +9,7 @@ If you're want to write code according to the
 , this will help a great deal.
 
 I recommend that the package
-[google-c-style](http://melpa.milkbox.net/#/google-c-style)
+[google-c-style](https://melpa.org/#/google-c-style)
 also installed with.
 
 ## Installation
@@ -76,7 +76,7 @@ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with
-this program.  If not, see http://www.gnu.org/licenses/.
+this program.  If not, see https://www.gnu.org/licenses/.
 
 See
 [COPYING](https://github.com/flycheck/flycheck-google-cpplint/blob/master/COPYING)
