@@ -5,7 +5,7 @@
 Add Google C++ Style checker for [Flycheck](https://github.com/flycheck/flycheck).
 
 If you're want to write code according to the
-[Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml)
+[Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 , this will help a great deal.
 
 I recommend that the package
