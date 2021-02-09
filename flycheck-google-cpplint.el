@@ -120,7 +120,7 @@ linelength=digits
   "A C/C++ style checker using google cpplint.
 
 See URL
-`http://google-styleguide.googlecode.com/svn/trunk/cpplint/cpplint.py'."
+`https://github.com/google/styleguide/blob/gh-pages/cpplint/cpplint.py'."
   :command ("cpplint"
             (option "--verbose=" flycheck-googlelint-verbose concat)
             (option "--filter=" flycheck-googlelint-filter concat
