@@ -3,6 +3,7 @@
 ;; Copyright (C) 2014  Akiha Senda
 
 ;; Author: Akiha Senda <senda.akiha@gmail.com>
+;; Maintainer: Jen-Chieh Shen <jcs090218@gmail.com>
 ;; URL: https://github.com/flycheck/flycheck-google-cpplint/
 ;; Version: 1.0.1
 ;; Keywords: flycheck, C, C++
