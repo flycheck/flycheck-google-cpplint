@@ -27,7 +27,7 @@ In your [Cask](http://cask.github.io) file:
 
 In your `init.el`:
 
-```
+```el
 (eval-after-load 'flycheck
   '(progn
      (require 'flycheck-google-cpplint)
@@ -39,7 +39,7 @@ In your `init.el`:
 
 If you not use `cppcheck`. You have need to change `flycheck-add-next-checker`.
 
-```
+```el
 (flycheck-add-next-checker 'c/c++-clang
                            '(warning . c/c++-googlelint))
 ```
@@ -56,7 +56,7 @@ $ pip install cpplint
 
 ### Configure for cpplint.py
 
-```
+```el
 (custom-set-variables
  '(flycheck-googlelint-verbose "3")
  '(flycheck-googlelint-filter "-whitespace,+whitespace/braces")
