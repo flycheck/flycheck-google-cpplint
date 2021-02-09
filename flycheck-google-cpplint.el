@@ -135,5 +135,4 @@ See URL
 (add-to-list 'flycheck-checkers 'c/c++-googlelint 'append)
 
 (provide 'flycheck-google-cpplint)
-
 ;;; flycheck-google-cpplint.el ends here
