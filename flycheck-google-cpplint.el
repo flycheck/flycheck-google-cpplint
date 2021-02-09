@@ -121,7 +121,7 @@ linelength=digits
 
 See URL
 `http://google-styleguide.googlecode.com/svn/trunk/cpplint/cpplint.py'."
-  :command ("cpplint.py"
+  :command ("cpplint"
             (option "--verbose=" flycheck-googlelint-verbose concat)
             (option "--filter=" flycheck-googlelint-filter concat
                     flycheck-option-comma-separated-list)
