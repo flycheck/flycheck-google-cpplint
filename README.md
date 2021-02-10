@@ -2,6 +2,7 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-green.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![MELPA](https://melpa.org/packages/flycheck-google-cpplint-badge.svg)](https://melpa.org/#/flycheck-google-cpplint)
+[![MELPA Stable](https://stable.melpa.org/packages/flycheck-google-cpplint-badge.svg)](https://stable.melpa.org/#/flycheck-google-cpplint)
 
 Add Google C++ Style checker for [Flycheck](https://github.com/flycheck/flycheck).
 
