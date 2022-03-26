@@ -7,7 +7,7 @@ TEST-FILES := $(shell ls test/flycheck-google-cpplint-*.el)
 
 .PHONY: clean package install compile checkdoc lint unix-test
 
-ci: clean package install compile
+ci: clean install compile
 
 package:
 	@echo "Packaging..."
