@@ -13,7 +13,7 @@ package:
 	@echo "Packaging..."
 	$(EASK) autoloads
 	$(EASK) pkg-file
-	#$(EASK) package
+	$(EASK) package
 
 clean:
 	@echo "Cleaning..."
