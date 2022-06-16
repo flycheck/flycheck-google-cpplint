@@ -2,6 +2,9 @@
          "1.0.2"
          "Help to comply with the Google C++ Style Guide")
 
+(website-url "https://github.com/flycheck/flycheck-google-cpplint/")
+(keywords "flycheck" "c" "c++")
+
 (package-file "flycheck-google-cpplint.el")
 
 (source "gnu")
