@@ -132,7 +132,7 @@ See URL
             source-original)
   :error-patterns
   ((warning line-start (file-name) ":" line ":  " (message) line-end))
-  :modes (c-mode c++-mode))
+  :modes (c-mode c++-mode c-ts-mode c++-ts-mode))
 
 (add-to-list 'flycheck-checkers 'c/c++-googlelint 'append)
 
