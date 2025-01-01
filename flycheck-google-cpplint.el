@@ -1,7 +1,7 @@
 ;;; flycheck-google-cpplint.el --- Help to comply with the Google C++ Style Guide
 
 ;; Copyright (C) 2014  Akiha Senda
-;; Copyright (C) 2021-2024  Shen, Jen-Chieh
+;; Copyright (C) 2021-2025  Shen, Jen-Chieh
 
 ;; Author: Akiha Senda <senda.akiha@gmail.com>
 ;; Maintainer: Jen-Chieh Shen <jcs090218@gmail.com>
