@@ -1,3 +1,5 @@
+;; -*- mode: eask; lexical-binding: t -*-
+
 (package "flycheck-google-cpplint"
          "1.0.2"
          "Help to comply with the Google C++ Style Guide")
