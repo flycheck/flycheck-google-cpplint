@@ -95,7 +95,7 @@ root=subdir
   ignored.
 
   Examples:
-    Assuing that src/.git exists, the header guard CPP variables for
+    Assuming that src/.git exists, the header guard CPP variables for
     src/chrome/browser/ui/browser.h are:
 
     No flag => CHROME_BROWSER_UI_BROWSER_H_
@@ -118,6 +118,19 @@ linelength=digits
   :safe #'stringp
   :package-version '(flycheck . "0.18"))
 
+(flycheck-def-option-var flycheck-googlelint-extensions nil c/c++-googlelint
+  "The valid file extensions passed to the Google C++ lint.
+
+extensions=x,y,z
+  This is a comma-separated list with allowed file extensions. The default value is
+  `cc, h, cpp, cu, cuh'.
+
+  Examples:
+    --extensions=cc,h,cpp,cu,cuh"
+  :type '(string :tag "Extensions")
+  :safe #'stringp
+  :package-version '(flycheck . "0.23"))
+
 (flycheck-define-checker c/c++-googlelint
   "A C/C++ style checker using google cpplint.
 
@@ -130,6 +143,7 @@ See URL
                     flycheck-option-comma-separated-list)
             (option "--root=" flycheck-googlelint-root concat)
             (option "--linelength=" flycheck-googlelint-linelength concat)
+            (option "--extensions=" flycheck-googlelint-extensions concat)
             source-original)
   :error-patterns
   ((warning line-start (file-name) ":" line ":  " (message) line-end))
